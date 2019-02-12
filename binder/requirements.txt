@@ -181,7 +181,7 @@ pip==18.1=py36_1000
 pixman==0.34.0=h470a237_3
 poppler==0.67.0=h4d7e492_3
 poppler-data==0.4.9=0
-postgresql=10.5==h66035e0_0
+postgresql==10.5=h66035e0_0
 proj4==4.9.3=h470a237_8
 prometheus_client==0.3.1=py_1
 prompt_toolkit==1.0.15=py_1
