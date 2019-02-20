@@ -6,4 +6,8 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager \
                              jupyter-leaflet \
                              dask-labextension
 
+# Add wine install to our path, and make a symlink so it can be called as wine
+export PATH=$PATH:/usr/lib/wine
+ln -s /usr/lib/wine/wine64 /usr/lib/wine/wine
+
 #EOF
