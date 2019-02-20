@@ -1,28 +1,40 @@
-name: pangeo
+name: pangeo_lidar
 channels:
   - conda-forge
 dependencies:
-  - python=3.6
-  - xarray
   - dask
-  - distributed
   - dask-kubernetes
+  - distributed
   - gcsfs
-  - intake::intake-xarray
-  - zarr
-  - matplotlib
-  - numcodecs
-  - python-blosc
-  - lz4
-  - nomkl
-  - nbserverproxy
-  - jupyter
-  - jupyterlab=0.35
-  - jupyterlab_launcher
-  - jupyter_client
-  - ipywidgets
+  - geopandas
   - graphviz
+  - intake::intake-xarray
+  - ipywidgets
+  - jupyter
+  - jupyter_client
+  - jupyterlab_launcher
+  - jupyterlab=0.35
+  - lz4
+  - matplotlib
+  - nbserverproxy
   - nodejs
+  - nomkl
+  - numcodecs
+  - numpy
+  - pandas
+  - pdal
+  - python-blosc
+  - python-pdal
+  - python=3.6
+  - rasterio
+  - rasterstats
+  - scikit-image
+  - scikit-learn
+  - seaborn
+  - shapely
+  - xarray
+  - zarr
+
   - pip:
     - kubernetes
     - graphviz
