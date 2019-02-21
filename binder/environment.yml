@@ -38,3 +38,4 @@ dependencies:
   - pip:
     - kubernetes
     - graphviz
+    - "git+https://github.com/Ecotrust/pyFIRS.git"

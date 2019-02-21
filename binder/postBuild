@@ -6,8 +6,10 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager \
                              jupyter-leaflet \
                              dask-labextension
 
-# Add wine install to our path
-export PATH=$PATH:/usr/lib/wine
+# Add symlinks to execute wine from a directory already in our PATH
+mkdir ~/.local/bin
+ln -s /usr/lib/wine/wine64 ~/.local/bin/wine
+ln -s /usr/lib/wine/winserver64 ~/.local/bin/wineserver
 
 # Install LAStools
 wget http://www.cs.unc.edu/~isenburg/lastools/download/LAStools.zip \
@@ -21,7 +23,7 @@ wget http://www.cs.unc.edu/~isenburg/lastools/download/LAStools.zip \
 # Install FUSION
 wget http://forsys.sefs.uw.edu/Software/FUSION/fusionlatest.zip \
     -O fusion.zip \
-    && unzip -q fusion.zip -x "APScripts/*" -d ${HOME} \
+    && unzip -q fusion.zip -x "APScripts/*" -d ${HOME}/fusion/ \
     && rm fusion.zip
 
 #EOF
