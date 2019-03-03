@@ -8,8 +8,8 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager \
 
 # Add symlinks to execute wine from a directory already in our PATH
 mkdir -p ~/.local/bin
-ln -s /usr/lib/wine/wine64 ~/.local/bin/wine
-ln -s /usr/lib/wine/wineserver64 ~/.local/bin/wineserver
+ln -s /usr/lib/wine/wine32 ~/.local/bin/wine
+ln -s /usr/lib/wine/wineserver32 ~/.local/bin/wineserver
 
 # Install LAStools
 wget --quiet http://www.cs.unc.edu/~isenburg/lastools/download/LAStools.zip \
